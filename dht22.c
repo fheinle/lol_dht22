@@ -88,7 +88,7 @@ static int read_dht22_dat()
         if ((dht22_dat[2] & 0x80) != 0)  t *= -1;
 
 
-    printf("Humidity = %.2f %% Temperature = %.2f *C \n", h, t );
+    printf("{\"humidity\": %.2f, \"temperature\": %.2f}", h, t );
     return 1;
   }
   else
