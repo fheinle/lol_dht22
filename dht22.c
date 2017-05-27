@@ -117,8 +117,6 @@ int main (int argc, char *argv[])
     exit(EXIT_FAILURE);
   }
 
-  printf ("Raspberry Pi wiringPi DHT22 reader\nwww.lolware.net\n") ;
-
   lockfd = open_lockfile(LOCKFILE);
 
   if (wiringPiSetup () == -1)
